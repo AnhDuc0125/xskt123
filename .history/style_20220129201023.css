@@ -45,7 +45,7 @@ body {
 .header--2 {
   font-family: "Dancing Script", cursive;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -56,7 +56,7 @@ body {
 .data__dienToan,
 .data__thanTai {
   font-family: arial;
-  font-size: 30px;
+  font-size: 29px;
 }
 
 #data__dacBiet {
@@ -131,15 +131,10 @@ body {
   width: 100%;
   height: 100%;
   border-collapse: collapse;
-  min-height: 189px;
 }
 
 ul {
   list-style-type: none;
-}
-
-li {
-  font-size: 18px;
 }
 
 th.cols__title {
@@ -162,12 +157,24 @@ th.cols {
   font-weight: bolder;
   font-size: 21px;
   text-align: center;
-  transform: translateY(15px);
+  transform: translateY(10px);
 }
 
 .ask {
   width: 750px;
   height: 250px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  background-color: #8ecae6;
+  margin-top: 50px;
+}
+
+.custom_box {
+  width: 750px;
+  height: fit-content;
   padding: 20px;
   margin: 0 auto;
   border-radius: 10px;

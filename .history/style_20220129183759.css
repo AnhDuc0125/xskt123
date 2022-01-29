@@ -35,28 +35,29 @@ body {
 .header {
   width: 100%;
   height: 10%;
-  border-bottom: 2px dashed black;
 }
 
 .header--1 {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .header--2 {
   font-family: "Dancing Script", cursive;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 /* data css */
+#data__dienToan--1,
+#data__thanTai--1,
+#data__dienToan--2,
+#data__thanTai--2,
+#data__dacBiet,
 .data__body--1,
-.data__body--2,
-.data__dienToan,
-.data__thanTai {
+.data__body--2 {
   font-family: arial;
-  font-size: 30px;
 }
 
 #data__dacBiet {
@@ -66,12 +67,11 @@ body {
 .space {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
-  transform: translateY(-5px);
 }
 
 .data__body--1,
 .data__body--2 {
-  margin-right: 5px;
+  font-size: 30px;
 }
 
 /* body css*/
@@ -124,22 +124,17 @@ body {
 
 .footer--1 {
   width: 100%;
-  height: 175px;
+  height: 75%;
 }
 
 .footer table {
   width: 100%;
   height: 100%;
   border-collapse: collapse;
-  min-height: 189px;
 }
 
 ul {
   list-style-type: none;
-}
-
-li {
-  font-size: 18px;
 }
 
 th.cols__title {
@@ -160,14 +155,26 @@ th.cols {
   height: 25%;
   font-family: "Andada Pro", serif;
   font-weight: bolder;
-  font-size: 21px;
+  font-size: 20px;
   text-align: center;
-  transform: translateY(15px);
+  transform: translateY(35px);
 }
 
 .ask {
   width: 750px;
   height: 250px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  background-color: #8ecae6;
+  margin-top: 50px;
+}
+
+.custom_box {
+  width: 750px;
+  height: fit-content;
   padding: 20px;
   margin: 0 auto;
   border-radius: 10px;

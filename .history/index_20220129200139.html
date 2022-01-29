@@ -19,10 +19,10 @@
           <div class="header--2">
             <div class="dienToan">
               Xổ Số Điện Toán:
-              <span class="data__dienToan"></span>
+              <span id="data__dienToan--1"></span>
             </div>
             <div class="thanTai">
-              Thần Tài: <span class="data__thanTai"></span>
+              Thần Tài: <span id="data__thanTai--1"></span>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@
             <!-- row6 -->
             <div class="body__item"></div>
             <div class="body__item data__body--1"></div>
-            <div class="body__item space">-</div>
+            <div class="body__item"></div>
             <div class="body__item data__body--1"></div>
             <div class="body__item"></div>
             <div class="body__item"></div>
@@ -180,10 +180,10 @@
           <div class="header--2">
             <div class="dienToan">
               Xổ Số Điện Toán:
-              <span class="data__dienToan"></span>
+              <span class="data__dienToan--2"></span>
             </div>
             <div class="thanTai">
-              Thần Tài: <span class="data__thanTai"></span>
+              Thần Tài: <span id="data__thanTai--2"></span>
             </div>
           </div>
         </div>
@@ -234,7 +234,7 @@
             <!-- row6 -->
             <div class="body__item"></div>
             <div class="body__item data__body--2"></div>
-            <div class="body__item space">-</div>
+            <div class="body__item">-</div>
             <div class="body__item data__body--2"></div>
             <div class="body__item"></div>
             <div class="body__item"></div>
@@ -354,6 +354,22 @@
             placeholder="Bố điền thần tài zô đây nè"
           />
           <button onclick="showData()">Điền!!!</button>
+        </form>
+      </div>
+    </div>
+    <div class="custom_box">
+      <strong style="font-size: 35px">Trong trường hợp bị thiếu cột:</strong>
+      <div class="form__group">
+        <form id="form_custom">
+          <div class="label__control">Cột bị thiếu là cột số:</div>
+          <input
+            type="number"
+            class="form__control"
+            id="input__custom--column"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            maxlength="1"
+          />
+          <button onclick="customColumn()">Chỉnh!!!</button>
         </form>
       </div>
     </div>

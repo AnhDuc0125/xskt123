@@ -310,7 +310,16 @@
                     <ul id="data__4--2"></ul>
                   </th>
                   <th class="cols">
-                    <ul id="data__5--2"></ul>
+                    <ul id="data__5--2">
+                      <li>12</li>
+                      <li>12</li>
+                      <li>12</li>
+                      <li>12</li>
+                      <li>12</li>
+                      <li>12</li>
+                      <li>12</li>
+                      <li>12</li>
+                    </ul>
                   </th>
                   <th class="cols">
                     <ul id="data__6--2"></ul>
@@ -328,7 +337,7 @@
               </tbody>
             </table>
           </div>
-          <div class="footer--2" id="data__footer--2"></div>
+          <div class="footer--2" id="data__footer--2">THỨ HAI CHỦ NHẬT</div>
         </div>
       </div>
     </div>
@@ -357,6 +366,22 @@
         </form>
       </div>
     </div>
+    <div class="custom_box">
+      <strong style="font-size: 35px">Trong trường hợp bị thiếu cột:</strong>
+      <div class="form__group">
+        <form id="form_custom">
+          <div class="label__control">Cột bị thiếu là cột số:</div>
+          <input
+            type="number"
+            class="form__control"
+            id="input__custom--column"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            maxlength="1"
+          />
+          <button onclick="customColumn()">Chỉnh!!!</button>
+        </form>
+      </div>
+    </div>
   </body>
-  <script src="app.js"></script>
+  <!-- <script src="app.js"></script> -->
 </html>

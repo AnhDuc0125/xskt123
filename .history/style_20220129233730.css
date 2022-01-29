@@ -177,6 +177,18 @@ th.cols {
   margin-top: 50px;
 }
 
+.custom_box {
+  width: 750px;
+  height: fit-content;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  background-color: #8ecae6;
+  margin-top: 50px;
+}
+
 .form__group {
   margin: 20px;
 }
