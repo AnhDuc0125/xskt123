@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+body {
+  width: 29.7cm;
+  height: 21cm;
+}
+
+.boxed__container {
+  width: 27.7cm;
+  height: 19cm;
+  margin: 1.2cm 1cm 0.8cm;
+  display: grid;
+  grid-template-columns: 12.85cm 12.85cm;
+  grid-template-rows: 19cm;
+}
+
+.boxed--1,
+.boxed--2 {
+  width: 12.85cm;
+  height: 19cm;
+}

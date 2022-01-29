@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+body {
+  width: 29.7cm;
+  height: 21cm;
+}
+
+.boxed__container {
+  display: flex;
+}
