@@ -341,6 +341,7 @@
           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
           maxlength="6"
           placeholder="Bố điền điện toán ở đây nhé bố!!! vd: 123456 --> 1 - 23 - 456"
+          required
         />
       </div>
       <div class="form__group">
@@ -352,8 +353,9 @@
             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             maxlength="4"
             placeholder="Bố điền thần tài zô đây nè"
+            required
           />
-          <button onclick="showData()">Điền!!!</button>
+          <button class="btn" onclick="showData()">Điền!!!</button>
         </form>
       </div>
     </div>

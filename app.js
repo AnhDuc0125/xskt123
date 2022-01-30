@@ -36,7 +36,6 @@ var col_8_copy = document.querySelector("#data__8--2");
 var col_9_copy = document.querySelector("#data__9--2");
 var dateTag = document.querySelector("#data__footer--1");
 var dateTagCopy = document.querySelector("#data__footer--2");
-console.log(dataTag);
 var date = new Date();
 var dayInWeek = date.getDay();
 var day = ("0" + date.getDate()).slice(-2);
@@ -102,7 +101,6 @@ function customColumn() {
   let valueInput = document.querySelector("#input__custom--column");
   let column = document.querySelector(`#col-${valueInput.value}`);
   let column_copy = document.querySelector(`#col-${valueInput.value}-copy`);
-  console.log(column);
   Object.assign(column.style, {
     columns: 2,
     webkitColumns: 2,
@@ -124,9 +122,13 @@ function customColumn() {
   });
 }
 
+//confirm lại dã điền thần tài chưa
 document.addEventListener("keydown", function (e) {
-  if (e.which == 80) {
-    confirm("Bố/Mẹ nhớ kiểm tra đã điền thần tài chưa nhé");
+  if (e.keyCode == 80 && e.ctrlKey) {
+    var confirmValue = confirm("Bố/Mẹ nhớ kiểm tra đã điền thần tài chưa nhé!");
+    if (confirmValue == false) {
+      e.preventDefault();
+    }
   }
 });
 
