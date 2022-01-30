@@ -14,18 +14,22 @@ body {
 }
 
 .boxed__container {
-  width: 27.7cm;
+  width: 28.7cm;
   height: 19cm;
-  margin: 1.2cm 1cm 0.8cm;
+  /*origin*/
+  /*margin: 1.2cm 1cm 0.8cm;*/
+  margin: 1.2cm 0.9cm 0.7cm 0.7cm;
   display: grid;
-  grid-template-columns: 12.85cm 12.85cm;
+  grid-template-columns: 13.35cm 13.35cm;
   grid-template-rows: 19cm;
-  column-gap: 2cm;
+  column-gap: 1.7cm;
+  /*print options*/
+  transform: translateX(-0.2cm);
 }
 
 .boxed--1,
 .boxed--2 {
-  width: 12.85cm;
+  width: 13.35cm;
   height: 19cm;
   padding: 5px;
   border: 5px double black;
@@ -39,7 +43,8 @@ body {
 }
 
 .header--1 {
-  font-size: 14px;
+  font-size: 15px;
+  text-align: center;
 }
 
 .header--2 {
