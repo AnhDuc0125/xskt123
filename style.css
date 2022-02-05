@@ -115,6 +115,8 @@ body {
 
 .body--2 .body__item.body__name {
   font-size: 25px;
+  justify-content: left;
+  margin-left: 15px;
 }
 
 .body--2 .body__item.data__body--1,
