@@ -31,7 +31,8 @@ body {
 .boxed--2 {
   width: 13.35cm;
   height: 19cm;
-  padding: 5px;
+  /*padding: 5px;*/
+  padding: 2px;
   border: 5px double black;
 }
 
@@ -62,6 +63,16 @@ body {
 .data__thanTai {
   font-family: arial;
   font-size: 30px;
+}
+
+.data__dienToan,
+.data__thanTai {
+  margin-left: 5px;
+}
+
+.dienToan, .thanTai {
+  display: flex;
+  align-items: center;
 }
 
 #data__dacBiet {
@@ -153,13 +164,18 @@ th.cols__title {
   width: 46.19px;
 }
 
+.first__cols {
+  vertical-align: top;
+  font-size: 20px;
+}
+
 th.cols {
   vertical-align: top;
   height: 137.07px;
 }
 
 .title__table {
-  width: 9%;
+  width: 12%;
   font-family: "Dancing Script", cursive;
 }
 
