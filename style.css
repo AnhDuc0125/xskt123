@@ -71,28 +71,23 @@ body {
   font-size: 30px;
 }
 
-<<<<<<< HEAD
 .dienToan,
-.thanTai {
-=======
+.thanTai,
 .data__dienToan,
 .data__thanTai {
   margin-left: 5px;
 }
 
-.dienToan, .thanTai {
->>>>>>> fd777f15e163d5ea992fa980edc2d2e718275d30
+.dienToan,
+.thanTai {
   display: flex;
   align-items: center;
 }
 
-<<<<<<< HEAD
 .dacBiet__title {
   font-size: 40px;
 }
 
-=======
->>>>>>> fd777f15e163d5ea992fa980edc2d2e718275d30
 #data__dacBiet {
   font-size: 70px;
 }
