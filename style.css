@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+}
+
 body {
   width: 29.7cm;
   height: 21cm;
@@ -167,10 +171,7 @@ body {
 
 ul {
   list-style-type: none;
-}
-
-li {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 th.cols__title {
@@ -202,16 +203,21 @@ th.cols {
   transform: translateY(15px);
 }
 
-.ask {
-  width: 750px;
-  height: 240px;
-  padding: 20px;
-  margin: 0 auto;
+.custom__boxed--container {
+  position: absolute;
+  top: 50px;
+  right: 50px;
   border-radius: 10px;
   border: none;
-  color: black;
   background-color: #8ecae6;
-  margin-top: 50px;
+}
+
+.ask {
+  border-bottom: 2px solid #0085ff;
+}
+
+.fontsize__input {
+  cursor: pointer;
 }
 
 .form__group {
@@ -229,7 +235,7 @@ input::-webkit-inner-spin-button {
 }
 
 .form__control {
-  width: 600px;
+  width: 150px;
   height: 40px;
   padding: 15px;
   font-size: 20px;
@@ -244,4 +250,11 @@ button {
   color: white;
   cursor: pointer;
   margin-top: 15px;
+}
+
+/* print settings */
+@media print {
+  .custom__boxed--container {
+    display: none;
+  }
 }

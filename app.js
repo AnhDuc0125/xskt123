@@ -72,11 +72,41 @@ switch (dayInWeek) {
     break;
 }
 
+function changeFontSize() {
+  let smallSize = document.querySelector("#smallSize");
+  let mediumSize = document.querySelector("#mediumSize");
+  let inputSize = document.querySelector(".input__fontsize");
+  if (smallSize.checked == true && inputSize.value) {
+    let font__cols1 = document.querySelector(`#data__${inputSize.value}--1`);
+    let font__cols2 = document.querySelector(`#data__${inputSize.value}--2`);
+    font__cols1.style.fontSize = "18px";
+    font__cols2.style.fontSize = "18px";
+  } else if (mediumSize.checked == true && inputSize.value) {
+    let font__cols1 = document.querySelector(`#data__${inputSize.value}--1`);
+    let font__cols2 = document.querySelector(`#data__${inputSize.value}--2`);
+    font__cols1.style.fontSize = "20px";
+    font__cols2.style.fontSize = "20px";
+  }
+}
+
+var dataDienToan = document.querySelectorAll(".data__dienToan");
+var dataThanTai = document.querySelectorAll(".data__thanTai");
+var dienToanTag = document.querySelector(".input__dienToan");
+var thanTaiTag = document.querySelector(".input__thanTai");
+
+//local Storage
+function start() {
+  for (i = 0; i < dataDienToan.length; i++) {
+    dataDienToan[i].innerText = `${localStorage.getItem(
+      "soMot"
+    )} - ${localStorage.getItem("soHai")} - ${localStorage.getItem("soBa")}`;
+  }
+  for (i = 0; i < dataThanTai.length; i++) {
+    dataThanTai[i].innerText = `${localStorage.getItem("thanTai")}`;
+  }
+}
+
 function showData() {
-  let dataDienToan = document.querySelectorAll(".data__dienToan");
-  let dataThanTai = document.querySelectorAll(".data__thanTai");
-  let dienToanTag = document.querySelector(".input__dienToan");
-  let thanTaiTag = document.querySelector(".input__thanTai");
   var dienToanvalue = dienToanTag.value;
   let motSo = dienToanvalue.slice(0, 1);
   let haiSo = dienToanvalue.slice(1, 3);
@@ -95,6 +125,11 @@ function showData() {
     dienToanTag.value = "";
     thanTaiTag.value = "";
   });
+
+  localStorage.setItem("thanTai", thanTaiTag.value);
+  localStorage.setItem("soMot", motSo);
+  localStorage.setItem("soHai", haiSo);
+  localStorage.setItem("soBa", baSo);
 }
 
 function customColumn() {

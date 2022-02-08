@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Con trai siêu đẹp zai</title>
   </head>
-  <body>
+  <body onload="start()">
     <div class="boxed__container">
       <div class="boxed--1">
         <div class="header">
@@ -334,31 +334,65 @@
         </div>
       </div>
     </div>
-    <div class="ask">
-      <div class="form__group">
-        <label class="label__control">Xổ số Điện Toán:</label>
-        <input
-          type="number"
-          class="form__control input__dienToan"
-          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-          maxlength="6"
-          placeholder="Bố điền điện toán ở đây nhé bố!!! vd: 123456 --> 1 - 23 - 456"
-          required
-        />
-      </div>
-      <div class="form__group">
-        <form id="form_thanTai">
-          <label for="" class="label__control">Thần Tài:</label>
+    <div class="custom__boxed--container">
+      <div class="ask custom__boxed">
+        <div class="form__group">
+          <label class="label__control">Xổ số Điện Toán:</label>
           <input
             type="number"
-            class="form__control input__thanTai"
+            class="form__control input__dienToan"
             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-            maxlength="4"
-            placeholder="Bố điền thần tài zô đây nè"
+            maxlength="6"
             required
+            autofocus
           />
-          <button class="btn" onclick="showData()">Điền!!!</button>
-        </form>
+        </div>
+        <div class="form__group">
+          <form id="form_thanTai">
+            <label for="" class="label__control">Thần Tài:</label>
+            <input
+              type="number"
+              class="form__control input__thanTai"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              maxlength="4"
+              required
+            />
+            <button class="btn" onclick="showData()">Điền!!!</button>
+          </form>
+        </div>
+      </div>
+      <div class="custom custom__boxed">
+        <div class="form__group">
+          <div class="label__control">Chọn cỡ chữ:</div>
+          <br />
+          <input
+            type="radio"
+            name="fontsize"
+            class="fontsize__input"
+            id="smallSize"
+          />
+          <span>Nhỏ</span>
+          <br />
+          <br />
+          <input
+            type="radio"
+            name="fontsize"
+            checked
+            class="fontsize__input"
+            id="mediumSize"
+          />
+          <span>Vừa</span>
+          <br />
+          <br />
+          <div class="label__control">Cột:</div>
+          <input
+            type="number"
+            class="form__control input__fontsize"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            maxlength="1"
+          />
+          <button class="btn2" onclick="changeFontSize()">OK</button>
+        </div>
       </div>
     </div>
   </body>
