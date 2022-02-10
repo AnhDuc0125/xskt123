@@ -160,11 +160,15 @@ function customColumn() {
 //confirm lại dã điền thần tài chưa
 document.addEventListener("keydown", function (e) {
   if (e.keyCode == 80 && e.ctrlKey) {
-    var confirmValue = confirm("Bố/Mẹ nhớ kiểm tra đã điền thần tài chưa nhé!");
+    var confirmValue = confirm("Bố mẹ nhớ kiểm tra đã điền thần tài chưa nhé!");
     if (confirmValue == false) {
       e.preventDefault();
     }
   }
+});
+
+window.addEventListener('afterprint', (event) => {
+  alert("Bố mẹ nhớ chụp lại màn hình gửi zalo cho cô nhé!");
 });
 
 // api url
